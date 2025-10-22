@@ -1,0 +1,43 @@
+cat > shopedge-backend/.gitignore << 'EOF'
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# IDE
+.idea/
+*.iws
+*.iml
+*.ipr
+.settings/
+.classpath
+.project
+.vscode/
+
+# Spring Boot
+spring-boot-*.log
+
+# Application
+application-local.properties
+application-dev.properties
+
+# Database
+*.db
+*.sqlite
+EOF
